@@ -1,0 +1,114 @@
+body {
+    margin-left: 86px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+}
+
+li {
+    list-style: none;
+    font-size: 12px;
+}
+
+
+/* logo */
+
+img {
+    max-width: 6%;
+    height: auto;
+    margin-left: 0;
+}
+
+
+/* FORMULAIRE */
+
+.box {
+    margin-left: 86px;
+    position: fixed;
+    top: 50%;
+    left: 72.5%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 40px;
+    /* border: 1px solid white; */
+}
+
+.box h2 {
+    margin: 0;
+    padding: 0;
+    color: #FCB332;
+    text-align: left;
+    margin-left: 2%;
+    margin-bottom: 80px;
+}
+
+.box .inputbox {
+    position: relative;
+}
+
+.box .inputbox input {
+    width: 30%;
+    padding: 10px 0;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+    letter-spacing: 2px;
+}
+
+.box .inputbox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 15px;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.box .inputbox input:focus~label,
+.box .inputbox input:valid~label {
+    top: -18px;
+    left: 0;
+    color: #FCB332;
+}
+
+.box input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #FCB332;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transform: translate(150%, -50%);
+}
+
+.box input[type="submit"]:hover {
+    background-color: #aa7315;
+}
+
+
+/* DROPDOWN MENU */
+
+select {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    width: 328px;
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+option {
+    color: black;
+    text-align: center;
+}
