@@ -75,8 +75,15 @@ var autoList = [
     "RC Vichy",
     "SO Voiron"
 ];
+for (let index = 0; index < autoList.length; index++) {
+    const element = autoList[index];
 
-var node = document.createElement("LI"); // Create a <li> node
-var textnode = document.createTextNode("base"); // Create a text node
-node.appendChild(textnode); // Append the text to <li>
-document.getElementById("club").appendChild(node); // Append <li> to <ul> with id="myList"
+    var option = document.createElement("option"); // Create a <li> node
+    var textnode = document.createTextNode(element);
+    var attribute = document.createAttribute("value");
+    attribute.value = element;
+    option.setAttributeNode(attribute);
+    option.appendChild(textnode); // Append the text to <li>
+    document.getElementById("club").appendChild(option); // Append <li> to <ul> with id="myList"
+
+}
